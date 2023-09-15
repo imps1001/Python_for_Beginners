@@ -1,3 +1,8 @@
+"""
+Developed by Pragati Sahu
+Youtube Channel link
+https://www.youtube.com/channel/codeatrandom/
+"""
 from turtle import *
 
 colors =['#f65314','#7cbb00', '#ffbb00', '#00a1f1' ]
