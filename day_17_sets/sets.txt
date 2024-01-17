@@ -1,0 +1,70 @@
+myset = {"apple", "banana", "cherry"}
+- Sets are used to store multiple items in a single variable.
+- Sets are written with curly brackets.
+- Set items are unordered, unchangeable, and do not allow duplicate values.
+    - Set items can appear in a different order every time you use them, and cannot be referred to by index or key.
+    - Set items are unchangeable, meaning that we cannot change the items after the set has been created.
+    - Sets cannot have two items with the same value.
+
+- To determine how many items a set has, use the len() function.
+- Set items can be of any data type:
+
+
+--> Accessing Items in Set
+ - You cannot access items in a set by referring to an index or a key.
+
+ - But you can loop through the set items using a for loop, or ask if a specified value is present in a set, by using the in keyword.
+
+ thisset = {"apple", "banana", "cherry"}
+
+    for x in thisset:
+    print(x)
+
+    thisset = {"apple", "banana", "cherry"}
+    print("banana" in thisset)  
+
+--> Add new items
+
+-Once a set is created, you cannot change its items, but you can add new items.
+- To add one item to a set use the add() method.
+
+    set1 = {"apple", "banana", "cherry"}
+    thisset.add("orange")
+    print(thisset)
+
+
+- To add items from another set into the current set, use the update() method.
+    set1 = {"apple", "banana", "cherry"}
+    set2 = {"pineapple", "mango", "papaya"}
+    thisset.update(tropical)
+    print(thisset)
+
+The object in the update() method does not have to be a set, it can be any iterable object (tuples, lists, dictionaries etc.).
+    thisset = {"apple", "banana", "cherry"}
+    mylist = ["kiwi", "orange"]
+    thisset.update(mylist)
+    print(thisset)
+
+
+-->Remove Item:
+- To remove an item in a set, use the remove(), or the discard() method.
+- The difference between them is that if the item does not exist in the set, discard() will not raise an error.
+- Remove a random item by using the pop() method
+- Sets are unordered, so when using the pop() method, you do not know which item that gets removed.
+
+
+--> Join Two Sets
+- You can use the union() method that returns a new set containing all items from both sets, or the update() method that inserts all the items from one set into another:
+- Both union() and update() will exclude any duplicate items.
+
+--> Intersection of Two Sets
+- The intersection_update() method will Removes the items in this set that are not present set.
+- The intersection() will Returns a set, that is the intersection of two other sets.
+
+
+--> Symmetric Difference of two sets
+-The symmetric_difference_update() method will inserts the symmetric differences from this set and another
+- The symmetric_difference will Returns a set with the symmetric differences of two sets
+- The values True and 1 are considered the same value in sets, and are treated as duplicates:
+
+
